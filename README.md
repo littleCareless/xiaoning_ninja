@@ -8,8 +8,6 @@ Ninja 仅供学习参考使用，请于下载后的 24 小时内删除，本人�
 
 Ninja 仅支持 qinglong 2.8.2+
 
-[TG 频道](https://t.me/joinchat/sHKuteb_lfdjNmZl)
-
 ## 特性
 
 - [x] 扫码，跳转登录添加/更新 cookie
@@ -82,9 +80,9 @@ Ninja 仅支持 qinglong 2.8.2+
    **进容器内执行以下命令**
 
    ```bash
-   git clone https://github.com/MoonBegonia/ninja.git /ql/ninja
+   git clone https://github.com/littleCareless/xiaoning_ninja.git /ql/ninja
    cd /ql/ninja/backend
-   pnpm install
+   yarn install
    pm2 start
    cp sendNotify.js /ql/scripts/sendNotify.js
    ```
@@ -95,7 +93,7 @@ Ninja 仅支持 qinglong 2.8.2+
    cd /ql/ninja/backend
    git checkout .
    git pull
-   pnpm install
+   yarn install
    pm2 start
    cp sendNotify.js /ql/scripts/sendNotify.js
    ```

@@ -164,7 +164,7 @@ export default {
 
     onMounted(() => {
       getInfo()
-      getQrcode()
+      // getQrcode()
     })
 
     return {
