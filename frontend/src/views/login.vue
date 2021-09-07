@@ -1,6 +1,6 @@
 <template>
   <div class="content">
-    <div class="card">
+    <!-- <div class="card">
       <div class="card-header">
         <div class="flex items-center justify-between">
           <p class="card-title">扫码登录</p>
@@ -25,9 +25,9 @@
         <img v-else :src="QRCode" :width="256" class="m-auto" />
       </div>
       <div class="card-footer"></div>
-    </div>
+    </div> -->
 
-    <div class="card hidden">
+    <div class="card">
       <div class="card-header">
         <div class="flex items-center justify-between">
           <p class="card-title">CK 登录</p>
@@ -150,9 +150,10 @@ export default {
         data.cookie.match(/pt_pin=(.*?);/)[1]
       if (ptKey && ptPin) {
         const body = await CKLoginAPI({ pt_key: ptKey, pt_pin: ptPin })
-        if (body.code === 200 && body.data.eid) {
+        if (body.code === 200 || body.data.eid) {
           localStorage.setItem('eid', body.data.eid)
           ElMessage.success(body.message)
+          router.push('/')
         } else {
           ElMessage.error(body.message || 'cookie 解析失败，请检查后重试！')
         }
