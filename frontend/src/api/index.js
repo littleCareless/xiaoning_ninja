@@ -1,8 +1,6 @@
 import ky from 'ky'
 
-// const VITE_API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api'
-
-const VITE_API_BASE_URL = 'http://42.193.100.8:5902/api'
+const VITE_API_BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api'
 
 const api = ky.create({ prefixUrl: VITE_API_BASE_URL, retry: { limit: 0 } })
 
