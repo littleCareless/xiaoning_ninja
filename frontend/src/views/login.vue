@@ -38,7 +38,9 @@
         <!-- <span class="card-subtitle"> 扫码以及跳转app登陆已失效，请自行抓取ck然后填入下方输入框上车即可，建议抓取京东app的ck，格式为：pt_key=app_openAAJXXXXX;pt_pin=app_openAAJXXXXX;(注意后面的符号) </span> -->
       </div>
       <div class="card-body text-left">
-        <p>如今CK有效期不长，平均1~3天，因此需要及时更新。</p>
+        <p>为了您的财产安全请关闭免密支付以及打开支付验密（京东-设置-支付设置-支付验密设置）。</p>
+        <p>建议京东账户绑定微信以保证提现能到账。</p>
+        <p>由于京东异地登录限制，扫码获取cookie只有2小时有效期，因此暂时关闭扫码功能，现需手动抓取Cookie。</p><b>且有效期不长，平均1-3天，因此需要及时更新。</b>
         <p>PC用户建议使用开源工具<a style="color: #CCCCFF" href="https://github.com/littleCareless/JD_Get_Cookie"  target="_blank">JD_GET_COOKIE</a>获取cookie并在下方填写</p>
         <p>手机用户可以使用Alook浏览器登录JD官网，并在菜单-工具箱-开发者工具-Cookies中获取(Android和iPhone通用)</p>
         <p>扫码以及跳转app登陆已失效，请自行抓取ck然后填入下方输入框上车即可。</p>
